@@ -1,0 +1,189 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: rgba(45, 107, 253, 50%);
+  }
+  
+  .main_items {
+    height: 100vh;
+    width: 100vw;
+    top: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+  }
+  
+  .todo_items {
+    height: 20vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .todo_items h2 {
+    color: rgb(2, 1, 1);
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  #todo_task {
+    height: 5vh;
+    width: 20vw;
+    padding: 0 15px;
+    border: none;
+    border-radius: 9px;
+    margin-bottom: 10px;
+    margin-top: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+  }
+  
+  #add_container {
+    width: 4vw;
+    height: 5vh;
+    border: none;
+    border-radius: 6px;
+    background-color: #2e60ea;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: rgba(45, 107, 253, 0.251);
+    transition: 0.3s linear;
+  }
+  
+  .all_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h5 {
+    font-size: 1rem;
+  }
+  
+  .item {
+    height: 2px;
+    width: 100vw;
+    background-color: blue;
+  }
+  
+  .list {
+    margin-top: 8px;
+    font-size: 18px;
+  }
+  
+  #lists .task {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .tasks {
+    border: 1px solid rgb(255, 255, 255);
+    width: 80vw;
+    margin-top: 8px;
+    border-radius: 8px;
+  }
+  
+  .text {
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+  }
+  
+  .edit {
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .edit:hover {
+    background-color: transparent;
+  }
+  
+  .delete {
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-size: 16px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  .delete:hover {
+    background-color: transparent;
+  }
+  
+  @media (max-width: 768px) 
+  {
+    .main_items {
+      height: 100vh;
+      width: 100vw;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .todo_items {
+      height: 20vh;
+      width: 80vw;
+      margin-top: 20px;
+    }
+  
+    #todo_task {
+      width: 40vw;
+    }
+  
+    #add_container{
+      width: 10vw;
+    }
+  
+    .tasks {
+      width: 60vw;
+    }
+  }
+  
+  
+  @media (max-width: 480px)
+   {
+    .main_items {
+      height: 100vh;
+      width: 100vw;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .todo_items {
+      height: 20vh;
+      width: 90vw;
+      margin-top: 10px;
+    }
+  
+    #todo_task{
+      width: 60vw;
+    }
+  
+    #add_container {
+      width: 15vw;
+    }
+  
+    .tasks {
+      width:80vw;
+      }
+  }
